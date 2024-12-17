@@ -425,7 +425,8 @@ export const initializeSubscription = async (req: Request, res: Response): Promi
         expireYear: expireYear,
         expireMonth: expireMonth,
         cvc: cvc,
-        registerConsumerCard: true
+        registerConsumerCard: true,
+        cardAlias:"My card alias",
     };
 
 
