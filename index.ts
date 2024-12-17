@@ -18,7 +18,7 @@ var delayInMilliseconds = 3000; //3 seconds
 const app:Application = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true })); // Resource sharing
+app.use(cors()); // Resource sharing
 app.use(cookieParser());                                              //allows us to parse incoming cookies
 app.use((req, res, next) => {
   if (req.originalUrl === "/api/stripe/webhooks") {
