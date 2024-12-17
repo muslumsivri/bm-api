@@ -433,7 +433,7 @@ export const initializeSubscription = async (req: Request, res: Response): Promi
     const request = {
         locale: Iyzipay.LOCALE.TR,
         conversationId: '123456789',
-        callbackUrl: process.env.BASE_URL + '/api/iyzipay/subscription/callback',
+        callbackUrl: 'https://bm-api-seven.vercel.app/api/iyzipay/subscription/callback',
         pricingPlanReferenceCode: plan === "scale" ? "fbbe6d23-7646-490b-82f3-32be98c2bd05" : "" , // ONLY SCALE FOR NOW !!!!!!!!!!!!!!!
         subscriptionInitialStatus: Iyzipay.SUBSCRIPTION_INITIAL_STATUS.ACTIVE,
         paymentCard: paymentCard,
