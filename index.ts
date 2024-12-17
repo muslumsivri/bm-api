@@ -57,4 +57,4 @@ try {
 
   app.set('view engine', 'ejs')
 
-
+  export default app;
