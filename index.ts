@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 
 app.get('/', (req:Request, res:Response) => {
-    res.send("Health Check");
+    res.send("BM Health Check");
 });
 
 // Routes
